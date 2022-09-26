@@ -1,0 +1,103 @@
+/* your first step in grid */
+.items {
+  font-size: 30px;
+  margin: 30px auto;
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  background-color: darkblue;
+}
+.items {
+  display: grid;
+  /* --------grid-template-columns------- */
+  /* grid-template-columns: 100px;*/
+  /* grid-template-columns: 100px 100px; */
+  grid-template-columns: 100px 100px 100px;
+  /* grid-template-columns: repeat(3, 100px); */
+  /* grid-template-columns: 100px 100px auto; */
+  /* grid-template-columns: 100px auto 100px; */
+  /* grid-template-columns: 1fr 1fr 2fr; */
+  /* /--------------------/ */
+
+  /* --------grid-template-rows------ */
+  /* grid-template-rows: 100px;*/
+  /* grid-template-rows: 100px 100px; */
+  grid-template-rows: 100px 100px 100px;
+  /* grid-template-rows: repeat(3, 100px); */
+  /* grid-template-rows: 100px 100px auto; */
+  /* grid-template-rows: 100px auto 100px; */
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  /* /--------------------/ */
+
+  /* --------gap------ */
+  /* grid-row-gap: 10px;*/
+  /* grid-column-gap: 10px;  */
+  /* grid-gap: 20px 10px; row col */
+  grid-gap: 10px;
+  /* /--------------------/ */
+
+  /* --------justify-items------ */
+  /* justify-items: stretch; */
+  /* go to inspect
+ you will see in the HTML code the word GRID click on it
+ replace the word center with possible values *
+  */
+  /* /--------------------/ */
+
+  /* --------align-items------ */
+  /* align-items: stretch; */
+  /* go to inspect 
+  you will see in the HTML code the word GRID click on it
+ replace the word center with possible values **/
+  /* /--------------------/ */
+
+  /* --------justify-content------ */
+  justify-content: center;
+  /* go to inspect
+  you will see in the HTML code the word GRID click on it
+ replace the word center with possible values */
+  /* /--------------------/ */
+
+  /* --------align-content------ */
+  /* align-content: center; */
+}
+.item1 {
+  background-color: red;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  grid-row: 1 / span 2;
+  /* grid-column: 1 / span 2; */
+  /* grid-column: 1 / span 2; */
+  /* align-self: start; */
+}
+.item2 {
+  background-color: cyan;
+  /* grid-column-start: span 3; */
+  /* grid-column: 2 / span ; */
+  /* grid-row: 2 / span 2;
+  grid-column: 2 / span 2; */
+  /* align-self: end; */
+}
+.item3 {
+  background-color: hotpink;
+  /* justify-self: center; */
+  /* align-self: center; */
+}
+.item4 {
+  background-color: blanchedalmond;
+}
+.item5 {
+  background-color: royalblue;
+}
+.item6 {
+  background-color: darkgoldenrod;
+}
+.item7 {
+  background-color: slateblue;
+}
+.item8 {
+  background-color: greenyellow;
+}
+.item9 {
+  background-color: tomato;
+}
